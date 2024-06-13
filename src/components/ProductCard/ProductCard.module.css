@@ -1,0 +1,75 @@
+.child {
+  top: 0;
+  background-color: var(--color-silver);
+  height: 600px;
+}
+.child,
+.inner,
+.item {
+  position: absolute;
+  left: 0;
+  width: 424px;
+}
+.item {
+  top: 0;
+  height: 600px;
+  object-fit: cover;
+}
+.inner {
+  top: 490px;
+  background-color: var(--color-dimgray-200);
+  height: 110px;
+}
+.b,
+.loveRepublic {
+  position: absolute;
+  top: 500px;
+  left: 10px;
+}
+.loveRepublic {
+  left: 211px;
+  text-align: right;
+}
+.vectorIcon {
+  position: absolute;
+  top: 20px;
+  left: 371px;
+  width: 33px;
+  height: 28.4px;
+}
+.b1,
+.button {
+  position: absolute;
+  top: 545px;
+  left: 10px;
+  font-size: var(--font-size-17xl);
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 556px;
+  left: 210px;
+  font-size: var(--font1-size);
+  font-family: var(--font);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.arrowIcon {
+  position: absolute;
+  top: 567px;
+  left: 329px;
+  max-height: 100%;
+  width: 85px;
+}
+.div {
+  width: 424px;
+  position: relative;
+  height: 600px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font);
+}

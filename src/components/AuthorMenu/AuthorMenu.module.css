@@ -1,0 +1,107 @@
+.div {
+    position: relative;
+    text-transform: uppercase;
+  }
+  .categories {
+    flex: 1;
+    height: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-2xl);
+  }
+  .b,
+  .div3 {
+    position: relative;
+  }
+  .b {
+    color: var(--color-tomato);
+  }
+  .categories2,
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-2xl);
+  }
+  .menu {
+    align-self: stretch;
+    align-items: flex-start;
+    gap: var(--gap-280xl);
+    font-family: var(--font1);
+  }
+  .a,
+  .pathChild {
+    position: relative;
+  }
+  .a {
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 85.33%;
+    color: inherit;
+  }
+  .pathChild {
+    width: 4px;
+    height: 8px;
+  }
+  .div7,
+  .div8 {
+    position: relative;
+    line-height: 85.33%;
+  }
+  .div8 {
+    color: var(--color-black);
+  }
+  .b1,
+  .path {
+    display: flex;
+  }
+  .path {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-10xs);
+    font-size: var(--font-size-xs);
+  }
+  .b1 {
+    width: 1195px;
+    position: relative;
+    font-size: var(--font-size-17xl);
+    line-height: 170%;
+    color: var(--color-black);
+    align-items: center;
+  }
+  .menuParent,
+  .personal {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .menuParent {
+    gap: var(--gap-24xl);
+  }
+  .personal {
+    background-color: var(--color-white);
+    padding: var(--padding-24xl) var(--padding-642xl) var(--padding-xl)
+      var(--padding-61xl);
+    text-align: left;
+    font-size: var(--font1-size);
+    color: var(--color-dimgray-100);
+    font-family: var(--font);
+  }
+  @media screen and (max-width: 1200px) {
+    .b1,
+    .menu {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .menu {
+      display: none;
+    }
+  }

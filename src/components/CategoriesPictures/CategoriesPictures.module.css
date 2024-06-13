@@ -1,0 +1,69 @@
+.yobys1,
+.vexbys1,
+.ltnb1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 424px;
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.yobys1 {
+  background-image: url(/assets/images/yobys-1@3x.png);
+}
+
+.vexbys1 {
+  background-image: url(/assets/images/vexbys-1@3x.png);
+}
+
+.ltnb1 {
+  background-image: url(/assets/images/ltnb-1@3x.png);
+}
+
+.categories,
+.categoriesPictures {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: var(--gap-28xl);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.categoriesPictures {
+  flex-direction: column;
+  padding: var(--padding-28xl) 0;
+}
+
+.yobys1Wrapper {
+  height: 600px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 430px) {
+  .categoriesPictures {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .categories {
+    gap: var(--gap-12xl);
+  }
+}

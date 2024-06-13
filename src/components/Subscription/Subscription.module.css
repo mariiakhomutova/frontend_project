@@ -1,0 +1,127 @@
+  .p {
+    margin: 0;
+  }
+  .span {
+    font-weight: 800;
+    font-family: var(--font);
+    color: var(--color-tomato);
+  }
+  .div,
+  .div1 {
+    position: relative;
+    line-height: 100%;
+  }
+  .div1 {
+    font-size: var(--font-size-13xl);
+    color: var(--color-gray-100);
+  }
+  .b,
+  .frameChild {
+    font-size: var(--font1-size);
+  }
+  .frameChild {
+    border: 0;
+    outline: 0;
+    background-color: var(--color-whitesmoke-200);
+    width: 630px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-11xs) var(--padding-xl);
+    box-sizing: border-box;
+    font-family: var(--font);
+    color: var(--color-dimgray-100);
+  }
+  .b {
+    width: 227px;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: var(--font1);
+    color: var(--color-white);
+    text-align: center;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .button,
+  .frameParent {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: var(--color-dimgray-100);
+    width: 300px;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frameParent {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: var(--gap-68xl);
+  }
+  .parent {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-36xl);
+  }
+  .subscription {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-21xl) var(--padding-435xl);
+    text-align: center;
+    font-size: var(--font-size-45xl);
+    color: var(--color-black);
+    font-family: var(--font);
+  }
+  @media screen and (max-width: 960px) {
+    .subscription {
+      font-size: var(--font-size-17xl);
+      padding: var(--padding-21xl) var(--padding-21xl);
+    }
+    .frameParent {
+      gap: var(--gap-mini);
+    }
+    .frameChild {
+      width: 360px;
+    }
+    .div1 {
+      font-size: var(--font-size-5xl);
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .subscription {
+      font-size: var(--font1-size);
+      padding: var(--padding-11xl) var(--padding-11xl);
+    }
+    .div1 {
+      font-size: var(--font-size-smi);
+    }
+    .frameParent {
+      align-self: center;
+      gap: none;
+      flex-direction: column;
+    }
+    .frameChild {
+      width: 296px;
+    }
+    .button {
+      width: 296px;
+    }
+    .parent {
+      gap: var(--gap-2xl);
+    }
+  }

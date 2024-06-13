@@ -1,0 +1,21 @@
+.container {
+    width: 414px;
+    padding: 16px 54px;
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(3, 140px);
+    gap: 16px;
+    box-sizing: border-box;
+  }
+  
+  .im {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 420px) {
+    .container {
+    display: none;
+    } 
+  }

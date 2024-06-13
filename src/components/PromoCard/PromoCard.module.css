@@ -1,0 +1,31 @@
+.div,
+.div1 {
+  position: relative;
+  font-family: var(--font);
+  color: var(--color-white);
+  text-align: left;
+}
+.div {
+  font-size: var(--font-size-125xl);
+  letter-spacing: -0.05em;
+  font-weight: 900;
+}
+.div1 {
+  font-size: var(--font-size-17xl);
+  letter-spacing: 0.12em;
+}
+.frameWrapper,
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  cursor: pointer;
+  padding: var(--padding-21xl) var(--padding-145xl);
+  background-color: var(--color-dimgray-100);
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}

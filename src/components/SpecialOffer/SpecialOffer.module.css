@@ -1,0 +1,77 @@
+.frameChild {
+    width: 804px;
+    height: 68px;
+    object-fit: cover;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    font-size: var(--font-size-5xl);
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    font-weight: 500;
+    font-family: var(--font1);
+    color: var(--color-dimgray-100);
+    text-align: left;
+    display: inline-block;
+  }
+  .frameParent,
+  .parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .parent {
+    flex: 1;
+    align-items: flex-start;
+    gap: var(--gap-41xl);
+  }
+  .frameParent {
+    align-self: stretch;
+    align-items: center;
+    padding: 0 0 var(--padding-32xl);
+    gap: var(--gap-44xl);
+  }
+  .specialOffer {
+    background-color: var(--color-white);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-25xl) 0 var(--padding-32xl);
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    font-family: var(--font);
+  }
+
+  @media screen and (max-width: 960px) {
+    .frameParent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    } 
+  }
+  @media screen and (max-width: 430px) {
+    .frameChild {
+      flex: 1;
+      align-self: stretch;
+      height: auto;
+    }
+    .frameChild {
+      width: 500px;
+      height: 42px;
+      object-fit: cover;
+    }
+    .frameParent {
+      padding: 0 0 var(--padding-xl);
+      gap: var(--gap-14xl);
+    }
+    .specialOffer {
+      padding: var(--padding-xl) 0 var(--padding-xl);
+    }
+    .button {
+      font-size: var(--font-size);
+    }
+  }
